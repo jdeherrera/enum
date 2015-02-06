@@ -1,10 +1,9 @@
 var enumeration = function(/* arguments */) {
     var obj = {};
     var args = Array.prototype.slice.call(arguments, 0);
-    var len = args.length;
-    var i, key;
+    var i, len, key;
 
-    for (i = 0; i < len; i++) {
+    for (i = 0, len = args.length; i < len; i++) {
         key = args[i];
         obj[key] = key;
     }
