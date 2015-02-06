@@ -1,19 +1,6 @@
-'use strict';
-
-/**
- * Constructs an enumeration with keys equal to their value.
- *
- * For example:
- *
- *   var COLORS = toEnum('blue', 'red');
- *   var myColor = COLORS.blue;
- *   var isColorValid = !!COLORS[myColor];
- *
- * @return {object}
- */
-var enum = function(/* arguments */) {
+var enumeration = function(/* arguments */) {
     var obj = {};
-    var args = Array.prototype.slice.call(arguments, 1);
+    var args = Array.prototype.slice.call(arguments, 0);
     var len = args.length;
     var i, key;
 
@@ -25,4 +12,4 @@ var enum = function(/* arguments */) {
     return obj;
 };
 
-module.exports = toEnum;
+module.exports = enumeration;
