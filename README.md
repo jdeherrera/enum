@@ -3,6 +3,6 @@ While working in a ReactJS project, I was using the keyMirror function to genera
 
 ```
 var constants = enum('FOO', 'BAR', 'BUZZ');
-!!constants('FOO'); // true
-!!constants('BIZZ'); // false
+!!constants.FOO; // true
+!!constants.BIZZ; // false
 ```
